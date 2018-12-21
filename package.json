@@ -1,26 +1,20 @@
 {
-  "name": "bitandbang",
-  "version": "1.1.0",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
+  "name": "@mikelseverson/card",
+  "version": "1.1.2",
+  "description": "A personal card for Mikel Severson (@mikelseverson)",
   "main": "index.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "mikelseverson-card": "./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bnb/bitandbang.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "url": "https://github.com/mikelseverson/mikelseverson-card.git"
   },
   "keywords": [],
-  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+  "author": "Mikel Severson <contact@mikelseverson.com> (https://mikelseverson.com/)",
   "license": "MIT",
   "dependencies": {
     "boxen": "^2.1.0",
     "chalk": "^2.4.1"
-  },
-  "devDependencies": {
-    "standard": "^12.0.1"
   }
 }
