@@ -21,42 +21,47 @@ const data = {
   github: chalk.cyan('https://github.com/mikelseverson'),
   linkedin: chalk.cyan('https://linkedin.com/in/mikelseverson'),
   web: chalk.cyan('https://mikelseverson.com/'),
+  chatbot: chalk.cyan('https://mikel.ai/'),
   npx: chalk.white('npx @mikelseverson/card'),
   labelWork: chalk.white.bold('      Work:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
   labelLinkedIn: chalk.white.bold('  LinkedIn:'),
   labelWeb: chalk.white.bold('       Web:'),
+  chatbotLabel: chalk.white.bold('   Chatbot:'),
   labelCard: chalk.white.bold('      Card:')
 }
 
 // Actual strings we're going to output
 const newline = '\n'
-const heading = `${data.name} ${data.handle}`
-const working = `${data.labelWork}  ${data.work}`
-const twittering = `${data.labelTwitter}  ${data.twitter}`
-const githubing = `${data.labelGitHub}  ${data.github}`
-const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
-const webing = `${data.labelWeb}  ${data.web}`
-const carding = `${data.labelCard}  ${data.npx}`
+const head = `${data.name} ${data.handle}`
+const work = `${data.labelWork}  ${data.work}`
+const twitter = `${data.labelTwitter}  ${data.twitter}`
+const github = `${data.labelGitHub}  ${data.github}`
+const linkedin = `${data.labelLinkedIn}  ${data.linkedin}`
+const web = `${data.labelWeb}  ${data.web}`
+const chatbot = `${data.chatbotLabel}  ${data.chatbot}`
+const card = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
 const cardContent =
-      heading +
+      head +
       newline +
       newline +
-      working +
+      work +
       newline +
-      twittering +
+      twitter +
       newline +
-      githubing +
+      github +
       newline +
-      linkedining +
+      linkedin +
       newline +
-      webing +
+      web +
+      newline +
+      chatbot +
       newline +
       newline +
-      carding
+      card
 
 const output = chalk.green(boxen(cardContent, options))
 
