@@ -14,7 +14,7 @@
   "author": "Mikel Severson <contact@mikelseverson.com> (https://mikelseverson.com/)",
   "license": "MIT",
   "dependencies": {
-    "boxen": "^4.0.0",
+    "boxen": "^5.0.0",
     "chalk": "^2.4.1"
   }
 }
